@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 保留Office JS核心（必须有！） -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <!-- 简单样式，让按钮好看 -->
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+        .miao-title {
+            color: #4299e1;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .miao-btn {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 6px;
+            background-color: #4299e1;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .miao-btn:hover {
+            background-color: #3182ce;
+        }
+        .miao-btn.clear {
+            background-color: #718096;
+        }
+        .miao-btn.clear:hover {
+            background-color: #4a5568;
+        }
+    </style>
+    <title>Excel喵式格式化助手</title>
+</head>
+<body>
+    <div class="miao-title">🐱 Excel喵式格式化助手 🐱</div>
+    <!-- 功能按钮 -->
+    <button class="miao-btn" id="setMiaoColor">一键喵星蓝背景</button>
+    <button class="miao-btn" id="setCenterAlign">一键居中对齐</button>
+    <button class="miao-btn clear" id="clearFormat">一键清除格式</button>
+
+    <!-- 引入自定义JS（核心！和按钮绑定功能） -->
+    <script src="taskpane.js"></script>
+</body>
+</html>
